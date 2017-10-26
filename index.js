@@ -1,11 +1,11 @@
 var cart = [];
-/*
+
 addToCart("stuff")
 addToCart("things")
-viewCart()
+
 removeFromCart("stuffs")
-viewCart()
-*/
+placeOrder(12345)
+
 
 function getCart() {
  return cart;
