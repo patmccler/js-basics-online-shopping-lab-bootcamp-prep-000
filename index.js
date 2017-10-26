@@ -98,6 +98,9 @@ function calcTotal() {
   for(let i = 0; i < cart.length; i++) {
     var thisItem = cart[i]
     var thisItemKey = Object.keys(thisItem)[0]
+
+    console.log(thisItemKey)
+
     total += thisItem[thisItemKey]
   }
 }
