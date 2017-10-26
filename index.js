@@ -1,10 +1,5 @@
 var cart = [];
 
-addToCart("stuff")
-addToCart("things")
-placeOrder()
-
-
 function getCart() {
  return cart;
 }
