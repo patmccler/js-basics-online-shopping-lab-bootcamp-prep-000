@@ -16,7 +16,8 @@ function getRandomPrice()
 
 function addToCart(item) {
   var item_obj = { [item]:getRandomPrice()}
-  cart.push(item)
+  cart.push(item_obj)
+  return
 }
 
 function viewCart() {
