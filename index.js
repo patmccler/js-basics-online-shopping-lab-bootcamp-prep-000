@@ -87,4 +87,17 @@ function placeOrder(cardNumber) {
   if(cardNumber.typeoof === undefined) {
     console.log("Sorry, we don't have a credit card on file for you.")
   }
+  else {
+    {
+      console.log(`Your total cost is${calcTotal()}    }`
+  }
+}
+
+function calcTotal() {
+  var total = 0;
+  for(let i = 0; i < cart.length; i++) {
+    var thisItem = cart[i]
+    thisItemKey = Object.keys(thisItem)[0]
+    total += thisItem[thisItemKey]
+  }
 }
