@@ -31,9 +31,9 @@ function viewCart() {
     for(let i = 0; i < cart.length; i++) {
       item = cart[i]
       cart_item_key = Object.keys(item)[0]
-      console.log(cart_item_key)
 
-      cart_items_list += `${cart_item_key + item[cart_item_key]}`
+
+      cart_items_list += `${cart_item_key} at ${item[cart_item_key] + i === cart.length - 1 ? . : ,}`
 
     }
 
