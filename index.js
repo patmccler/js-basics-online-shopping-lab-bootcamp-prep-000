@@ -69,7 +69,7 @@ function total() {
 }
 
 function removeFromCart(item) {
-  if(delete card[item])
+  if(delete cart[item])
   {
     return cart
   }
