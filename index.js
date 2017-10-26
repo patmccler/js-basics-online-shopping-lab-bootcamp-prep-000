@@ -37,7 +37,16 @@ function viewCart() {
         cart_items_list += 'and '
       }
 
-      cart_items_list += `${cart_item_key} at $${item[cart_item_key]}${i === cart.length - 1 && cart.length != 2 ? "." : ", "}`
+      cart_items_list += `${cart_item_key} at $${item[cart_item_key]}${
+        if(cart.length === 2 && i === 0)
+        {
+          break
+        }
+        else
+        {
+          i < cart.length - 1 ? "," : .
+        }
+      }`
 
     }
 
