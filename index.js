@@ -32,7 +32,9 @@ function viewCart() {
       item = cart[i]
       cart_item_key = Object.keys(item)[0]
 
-      if(i === cart.length - 1 && cart.length > 1)
+      if(i === cart.length - 1 && cart.length > 1) {
+        cart_items_list += 'and'
+      }
 
       cart_items_list += `${cart_item_key} at ${item[cart_item_key]}${i === cart.length - 1 ? "." : ","}`
 
