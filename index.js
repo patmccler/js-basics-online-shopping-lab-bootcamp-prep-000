@@ -3,7 +3,7 @@ var cart = [];
 addToCart("stuff")
 addToCart("things")
 viewCart()
-removeFromCart("stuff")
+removeFromCart("stuffs")
 viewCart()
 function getCart() {
  return cart;
