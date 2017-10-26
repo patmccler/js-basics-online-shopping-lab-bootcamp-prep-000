@@ -44,26 +44,28 @@ function viewCart() {
     for(let i = 0; i < cart.length; i++) {
       var item = cart[i]
       var cart_item_key = Object.keys(item)[0]
-
       if(i === cart.length - 1 && cart.length > 1) {
         cart_items_list += 'and '
       }
-
       cart_items_list += `${cart_item_key} at $${item[cart_item_key]}${punctuationNeeded(i,cart.length)}`
-
     }
-
     console.log(cart_items_list)
   }
   else {
     console.log("Your shopping cart is empty.")
   }
-
-
 }
 
 function total() {
-  // write your code here
+  var cartPrice = 0
+  for(let i = 0; i < cart.length; i++) {
+    var item = cart[i]
+    var cart_item_key = Object.keys(item)[0]
+    
+    
+    cartPrice += item[cart_item_key]
+  }
+  return cartPrice
 }
 
 function removeFromCart(item) {
