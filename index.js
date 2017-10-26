@@ -1,10 +1,10 @@
 var cart = [];
-
+/*
 addToCart("stuff")
 addToCart("things")
 addToCart("jawns")
 viewCart()
-
+*/
 function getCart() {
  return cart;
 }
