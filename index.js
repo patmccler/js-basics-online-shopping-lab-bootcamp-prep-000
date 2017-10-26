@@ -22,7 +22,7 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  if(card.length > 0) {
+  if(cary.length > 0) {
     var cart_items_list = "In your cart, you have "
     for(let i = 0; i < cart.length - 1; i++) {
       cart_items_list += cart[i]
