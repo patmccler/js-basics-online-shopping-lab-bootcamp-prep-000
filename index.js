@@ -97,7 +97,7 @@ function calcTotal() {
   var total = 0;
   for(let i = 0; i < cart.length; i++) {
     var thisItem = cart[i]
-    thisItemKey = Object.keys(thisItem)[0]
+    var thisItemKey = Object.keys(thisItem)[0]
     total += thisItem[thisItemKey]
   }
 }
