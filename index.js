@@ -30,11 +30,11 @@ function punctuationNeeded(i,length)
 
   if(length === 2 && i === 0)
   {
-    return ""
+    return " "
   }
   else
   {
-    return i < length - 1 ? "," : "."
+    return i < length - 1 ? ", " : "."
   }
 }
 
