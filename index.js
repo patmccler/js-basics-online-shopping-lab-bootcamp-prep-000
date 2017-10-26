@@ -30,7 +30,7 @@ function viewCart() {
     var cart_items_list = "In your cart, you have "
     for(let i = 0; i < cart.length; i++) {
       cart_item_key = Object.keys(cart[i])[0]
-
+      console.log(cart_item_key)
 
       cart_items_list += `${cart[i][cart_item_key]}`
 
