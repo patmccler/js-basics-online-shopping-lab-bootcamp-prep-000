@@ -2,7 +2,7 @@ var cart = [];
 
 addToCart("stuff")
 addToCart("things")
-placeOrder(12345)
+placeOrder()
 
 
 function getCart() {
