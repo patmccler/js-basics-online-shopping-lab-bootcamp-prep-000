@@ -9,12 +9,20 @@ function setCart(c) {
   return cart;
 }
 
+function getRandomPrice()
+{
+  return Math.random() * (95) + 5
+}
+
 function addToCart(item) {
- // write your code here
+  var item_obj = { item: }
+  cart.push(item)
 }
 
 function viewCart() {
-  // write your code here
+  for(let i = 0; i < cart.length; i++) {
+    
+  }
 }
 
 function total() {
