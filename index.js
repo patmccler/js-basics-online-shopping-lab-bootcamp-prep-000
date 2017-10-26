@@ -98,6 +98,7 @@ function calcTotal() {
     var thisItemKey = Object.keys(thisItem)[0]
 
     console.log(thisItemKey)
+    console.log(thisItem[thisItemKey])
 
     total += thisItem[thisItemKey]
   }
