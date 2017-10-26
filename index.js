@@ -30,7 +30,7 @@ function punctuationNeeded(i,length)
 
   if(length === 2 && i === 0)
   {
-    return
+    return ""
   }
   else
   {
