@@ -74,6 +74,7 @@ function removeFromCart(item) {
     var thisItem = cart[i]
     console.log(thisItem)
     thisItem = Object.keys(thisItem)[0]
+    console.log(thisItem)
     if(thisItem === item) {
       cart.splice(i,1)
       return cart
