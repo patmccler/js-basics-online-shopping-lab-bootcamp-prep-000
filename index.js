@@ -37,7 +37,7 @@ function viewCart() {
         cart_items_list += 'and '
       }
 
-      cart_items_list += `${cart_item_key} at ${item[cart_item_key]}${i === cart.length - 1 ? "." : ", "}`
+      cart_items_list += `${cart_item_key} at $${item[cart_item_key]}${i === cart.length - 1 ? "." : ", "}`
 
     }
 
