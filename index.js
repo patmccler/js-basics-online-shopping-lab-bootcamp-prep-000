@@ -1,5 +1,8 @@
 var cart = [];
 
+addToCart("stuff")
+
+
 function getCart() {
  return cart;
 }
