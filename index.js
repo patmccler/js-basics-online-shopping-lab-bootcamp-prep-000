@@ -1,10 +1,12 @@
 var cart = [];
-
+/*
 addToCart("stuff")
 addToCart("things")
 viewCart()
 removeFromCart("stuffs")
 viewCart()
+*/
+
 function getCart() {
  return cart;
 }
@@ -72,11 +74,8 @@ function total() {
 function removeFromCart(item) {
   for(let i = 0; i < cart.length; i++) {
     var thisItem = cart[i]
-    console.log(thisItem)
     thisItem = Object.keys(thisItem)[0]
-    console.log(thisItem)
     if(thisItem === item) {
-      console.log("match!")
       cart.splice(i,1)
       return cart
     }
