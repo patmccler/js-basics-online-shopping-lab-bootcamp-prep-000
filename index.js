@@ -31,7 +31,7 @@ function viewCart() {
     var cart_items_list = "In your cart, you have "
     for(let i = 0; i < cart.length; i++) {
       var item = cart[i]
-      cart_item_key = Object.keys(item)[0]
+      var cart_item_key = Object.keys(item)[0]
 
       if(i === cart.length - 1 && cart.length > 1) {
         cart_items_list += 'and '
