@@ -61,8 +61,8 @@ function total() {
   for(let i = 0; i < cart.length; i++) {
     var item = cart[i]
     var cart_item_key = Object.keys(item)[0]
-    
-    
+
+
     cartPrice += item[cart_item_key]
   }
   return cartPrice
