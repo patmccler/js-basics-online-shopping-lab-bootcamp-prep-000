@@ -100,6 +100,6 @@ function calcTotal() {
     console.log(thisItemKey)
     console.log(thisItem[thisItemKey])
 
-    total += thisItem[thisItemKey]
+    total += parseInt(thisItem[thisItemKey])
   }
 }
