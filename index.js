@@ -26,6 +26,19 @@ function addToCart(item) {
   return cart
 }
 
+function punctuationNeeded(i,length)
+{
+  
+  if(length === 2 && i === 0)
+  {
+    return
+  }
+  else
+  {
+    return i < length - 1 ? "," : "."
+  }
+}
+
 function viewCart() {
   if(cart.length > 0) {
     var cart_items_list = "In your cart, you have "
@@ -37,16 +50,7 @@ function viewCart() {
         cart_items_list += 'and '
       }
 
-      cart_items_list += `${cart_item_key} at $${item[cart_item_key]}${
-        if(cart.length === 2 && i === 0)
-        {
-          break
-        }
-        else
-        {
-          i < cart.length - 1 ? "," : .
-        }
-      }`
+      cart_items_list += `${cart_item_key} at $${item[cart_item_key]}${punctuationNeeded(i,cart.length)}`
 
     }
 
