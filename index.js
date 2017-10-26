@@ -96,10 +96,10 @@ function calcTotal() {
   for(let i = 0; i < cart.length; i++) {
     var thisItem = cart[i]
     var thisItemKey = Object.keys(thisItem)[0]
-
+    var thisItemCost = parseInt(thisItem[thisItemKey])
     console.log(thisItemKey)
     console.log(thisItem[thisItemKey])
 
-    total += parseInt(thisItem[thisItemKey])
+    total += thisItemCost
   }
 }
