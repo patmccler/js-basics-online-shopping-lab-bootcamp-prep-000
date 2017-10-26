@@ -2,6 +2,7 @@ var cart = [];
 
 addToCart("stuff")
 
+viewCart()
 
 function getCart() {
  return cart;
