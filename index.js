@@ -69,13 +69,15 @@ function total() {
 }
 
 function removeFromCart(item) {
-  if(delete cart[item])
-  {
-    return cart
+  for(let i = 0; i < cart.length; i++) {
+    var thisItem = cart[i]
+    thisItem = thisItem.keys()[0]
+    if(thisItem === item) {
+      cart.splice(i,1)
+      return cart
+    }
   }
-  else {
-    return "That item is not in your cart."
-  }
+  return "That item is not in your cart."
 }
 
 function placeOrder(cardNumber) {
