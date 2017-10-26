@@ -15,13 +15,13 @@ function getRandomPrice()
 }
 
 function addToCart(item) {
-  var item_obj = { item: }
+  var item_obj = { [item]:getRandomPrice()}
   cart.push(item)
 }
 
 function viewCart() {
   for(let i = 0; i < cart.length; i++) {
-    
+
   }
 }
 
