@@ -33,7 +33,7 @@ function viewCart() {
       cart_item_key = Object.keys(item)[0]
       console.log(cart_item_key)
 
-      cart_items_list += `${item}${item[cart_item_key]}`
+      cart_items_list += `${[item]}${item[cart_item_key]}`
 
     }
 
