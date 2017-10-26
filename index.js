@@ -99,7 +99,7 @@ function calcTotal() {
     var thisItemCost = parseInt(thisItem[thisItemKey])
     console.log(thisItemKey)
     console.log(thisItem[thisItemKey])
-
     total += thisItemCost
   }
+  return total
 }
