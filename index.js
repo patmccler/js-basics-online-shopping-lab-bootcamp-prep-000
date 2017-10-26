@@ -11,7 +11,7 @@ function setCart(c) {
 
 function getRandomPrice()
 {
-  return Math.random() * (95) + 5
+  return Math.random() * (99) + 1
 }
 
 function addToCart(item) {
