@@ -2,8 +2,6 @@ var cart = [];
 
 addToCart("stuff")
 addToCart("things")
-
-removeFromCart("stuffs")
 placeOrder(12345)
 
 
