@@ -1,9 +1,9 @@
 var cart = [];
-
+/*
 addToCart("stuff")
 addToCart("things")
 viewCart()
-
+*/
 function getCart() {
  return cart;
 }
